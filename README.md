@@ -10,7 +10,7 @@ Donna is vibe coding up a storm, using her extensive technical education and sof
 
 Projects to keep an eye on include:
 - MonoVerse ([https://bible.foundationalthings.com](https://bible.foundationalthings.com))
-- MonoNote (see Projects section of [https://foundationalthings.com](https://foundationalthings.com)
+- MonoNote (see Projects section of [https://foundationalthings.com](https://foundationalthings.com/#projects)
 
 ## Support Donna and Foundational Things
 Want to contribute to the development work at Foundational Things? Check out the [Ko-Fi page](https://ko-fi.com/foundationalthings) and consider "buying me a coffee".
