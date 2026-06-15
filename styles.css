@@ -28,7 +28,7 @@ body {
   background: var(--paper);
   color: var(--ink);
   font-family: var(--body);
-  font-size: 20px;
+  font-size: 15px;
   line-height: 1.7;
   min-height: 100vh;
   text-align: center;
@@ -45,7 +45,7 @@ body::before {
 }
 
 .site-wrap {
-  max-width: min(90vw, 1100px);
+  max-width: min(90vw, 1000px);
   margin: 0 auto;
   padding: 0 28px;
 }
@@ -124,7 +124,9 @@ header {
   border-radius: 3px;
   transition: all 0.18s ease;
 
-  margin-right: 6px; /*legacy fallback*/
+  /* margin-right: 6px;  */
+  /*legacy fallback*/
+  margin: 1px;
 }
 .anchor-nav > *:last-child {
   margin-right: 0;
@@ -258,6 +260,18 @@ p:last-child {
   padding: 22px 22px 18px;
 
   margin-bottom: 20px; /* legacy fallback */
+
+  list-style: none;
+}
+
+.available-card li {
+  font-family: var(--body);
+  padding: 10px;
+  margin-left: 40px;
+}
+
+.available-card ul > *:last-child {
+  padding-bottom: 20px;
 }
 
 .badges {
@@ -305,7 +319,7 @@ p:last-child {
 
 .project-card p,
 .available-card p {
-  font-size: 16px;
+  /* font-size: 16px; */
   letter-spacing: 0.05em;
   line-height: 1.6;
   color: var(--ink);
@@ -342,7 +356,7 @@ p:last-child {
 .card-link {
   margin-left: 16px;
   font-family: var(--mono);
-  font-size: 15px;
+  /* font-size: 15px; */
   color: var(--teal-deep);
   text-decoration: none;
   letter-spacing: 0.04em;
@@ -377,7 +391,7 @@ p:last-child {
 
 .kofi-nudge p {
   font-family: var(--mono);
-  font-size: 14px;
+  /* font-size: 14px; */
   letter-spacing: 0.2em;
   color: var(--ink);
 }
@@ -452,7 +466,7 @@ p:last-child {
 }
 
 .pillar-card p {
-  font-size: 15px;
+  /* font-size: 15px; */
   letter-spacing: 0.12em;
   color: rgba(255, 255, 255, 0.72);
   line-height: 1.5;
@@ -476,7 +490,7 @@ p:last-child {
 
 .ethos-divider span {
   font-family: var(--mono);
-  font-size: 15px;
+  /* font-size: 15px; */
   color: var(--teal-deep);
   letter-spacing: 0.15em;
 }
@@ -487,9 +501,9 @@ p:last-child {
   gap: 10px;
   text-align: left;
 }
-.values-grid > *:last-child {
-  /* margin-bottom: 0; */
-}
+/* .values-grid > *:last-child {
+  margin-bottom: 0;
+} */
 
 @media (max-width: 480px) {
   .values-grid {
@@ -540,7 +554,7 @@ p:last-child {
 }
 
 .value-item p {
-  font-size: 15px;
+  /* font-size: 15px; */
   letter-spacing: 0.2em;
   color: var(--muted);
   margin: 0;
@@ -551,7 +565,7 @@ p:last-child {
 
 /* ── About ── */
 .about-text {
-  max-width: 600px;
+  /* max-width: 600px; */
   margin: 0 auto;
   text-align: left;
   font-size: 16px;
@@ -659,7 +673,7 @@ p:last-child {
 .contact-line {
   margin-top: 20px;
   font-family: var(--mono);
-  font-size: 14px;
+  /* font-size: 14px; */
   color: var(--ink);
 }
 
@@ -710,12 +724,13 @@ footer {
   border-radius: 2px;
   transition: all 0.18s;
 
-  margin-right: 8px; /* fallback */
+  /* fallback */
+  margin: 4px;
 }
 
 .footer-links a:hover {
   color: var(--ink);
-  border-color: var(--lime);
+  border-color: var(--ink);
   background-color: var(--lime);
 }
 
