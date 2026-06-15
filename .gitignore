@@ -1,3 +1,11 @@
 .DS_Store
 
-v2
+# Jekyll build output (compiled HTML/CSS)
+/_site/
+
+# Local cache folders
+/.jekyll-cache/
+/.jekyll-metadata
+
+# Bundler's local configuration
+/.bundle/

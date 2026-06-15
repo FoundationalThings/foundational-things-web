@@ -1,83 +1,407 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundational Things</title>
-    <style>
-      :root {
-        --bg: #ffffee;
-        --text: #33466c;
-        --accent: #666;
-        --font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      }
+---
+layout: default
+---
 
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        font-family: var(--font);
-        background-color: var(--bg);
-        color: var(--text);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        padding: 2rem;
-      }
-
-      .container {
-        text-align: center;
-        max-width: 700px;
-        width: 100%;
-      }
-
-      .logo {
-        max-width: 600px;
-        margin: 0 auto 1.5rem;
-      }
-
-      h1 {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        font-weight: 400;
-      }
-
-      p {
-        font-size: 1rem;
-        color: var(--text);
-      }
-
-      @media (min-width: 768px) {
-        h1 {
-          font-size: 2.2rem;
-        }
-
-        p {
-          font-size: 1.125rem;
-        }
-      }
-
-      @media (max-width: 680px) {
-        .logo {
-          max-width: 300px;
-          margin: 0 auto 1.5rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <img
-        src="Logo_FullText.png"
-        alt="Foundational Things Logo"
-        class="logo"
-      />
-      <h1>Thanks for visiting Foundational Things.</h1>
-      <p>It's a thing.</p>
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">// what's happening</p>
+  <div class="projects">
+    <div class="project-card">
+      <div class="badges">
+        <div class="badge status-badge">Live POC</div>
+      </div>
+      <h3>MonoVerse</h3>
+      <p>Presenting the Bible, one verse at a time.</p>
+      <p>
+        This responsive web application is a live proof-of-concept that
+        intentionally supports legacy hardware and software, including iPad 3
+        (running iOS 9.3.5).
+      </p>
+      <div class="badges">
+        <div
+          class="badge type-badge"
+          role="img"
+          aria-label="Web App"
+          title="Web Application"
+        >
+          <svg class="type-badge-icon" style="aspect-ratio: 1 / 1; width: 32px">
+            <use href="#web_app_icon_svg" xlink:href="#web_app_icon_svg" />
+          </svg>
+        </div>
+        <div
+          class="badge type-badge"
+          role="img"
+          aria-label="Responsive Design"
+          title="Responsive Design"
+        >
+          <svg class="type-badge-icon" style="aspect-ratio: 1 / 1; width: 32px">
+            <use
+              href="#responsive_app_icon_svg"
+              xlink:href="#responsive_app_icon_svg"
+            />
+          </svg>
+        </div>
+      </div>
+      <div class="card-links">
+        <a
+          class="card-link"
+          href="https://bible.foundationalthings.com"
+          target="_blank"
+          >Try out MonoVerse</a
+        >
+        <a
+          class="card-link"
+          href="https://github.com/FoundationalThings/monoverse"
+          target="_blank"
+        >
+          <svg class="link-icon" aria-hidden="true" focusable="false">
+            <use href="#github_icon_svg" xlink:href="#github_icon_svg" /></svg
+          >GitHub
+        </a>
+      </div>
     </div>
-  </body>
-</html>
+    <div class="project-card">
+      <div class="badges">
+        <div class="badge status-badge">Ultra Beta</div>
+      </div>
+      <h3>MonoNote</h3>
+      <p>It's like a sticky note for your mobile device.</p>
+      <p>
+        Using widgets, you can place virtual sticky notes on every screen you
+        choose and your note will appear on all of them. MonoNote is especially
+        helpful for that one thing you need to remember.
+      </p>
+      <p>
+        This mobile app has just entered what I call the
+        <em>Ultra Beta</em> stage. MonoNote is exclusively available to folks
+        who show great interest, or who get volun-told to use the app.
+      </p>
+      <p>
+        Once we work out a few growing pains, the project will enter a more
+        publicly available pre-release Beta period.
+      </p>
+      <p>
+        If you're curious to learn more about MonoNote, or interested supporting
+        this work as a product tester, please reach out.
+      </p>
+      <div class="badges">
+        <div
+          class="badge type-badge"
+          role="img"
+          aria-label="Available on iOS"
+          title="Available on iOS"
+        >
+          <div class="icon-stack">
+            <svg
+              class="type-badge-icon"
+              style="aspect-ratio: 152.91 / 87.54; width: 52px"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use href="#apple_logo_svg" xlink:href="#apple_logo_svg" />
+            </svg>
+            <svg
+              class="type-badge-icon"
+              style="aspect-ratio: 152.91 / 87.54; width: 52px"
+              aria-hidden="true"
+              focusable="false"
+            >
+              <use href="#ios_text_svg" xlink:href="#ios_text_svg" />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="badge type-badge"
+          role="img"
+          aria-label="Available on Android"
+          title="Available on Android"
+        >
+          <svg
+            class="type-badge-icon"
+            style="aspect-ratio: 343.96 / 60.46; width: 182px"
+            aria-hidden="true"
+            focusable="false"
+          >
+            <use href="#android_logo_svg" xlink:href="#android_logo_svg" />
+          </svg>
+        </div>
+      </div>
+      <div class="card-links">
+        <a class="card-link" href="mailto:hello@foundationalthings.com">
+          <svg class="link-icon" aria-hidden="true" focusable="false">
+            <use href="#email_icon_svg" xlink:href="#email_icon_svg" /></svg
+          >Email Donna
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="kofi-nudge">
+    <p>Like what you see?</p>
+    <p>
+      <svg aria-hidden="true" focusable="false">
+        <use href="#kofi_icon_svg" xlink:href="#kofi_icon_svg" />
+      </svg>
+      <a href="https://ko-fi.com/foundationalthings" target="_kofi"
+        >Support Foundational Things on Ko-Fi</a
+      >
+      <svg aria-hidden="true" focusable="false">
+        <use href="#kofi_icon_svg" xlink:href="#kofi_icon_svg" />
+      </svg>
+    </p>
+  </div>
+</section>
+
+<!-- ETHOS -->
+<section id="ethos">
+  <p class="section-label">// ethos &amp; values</p>
+
+  <div class="pillars-grid">
+    <div class="pillar-card">
+      <h3>Communication</h3>
+      <p>
+        The foundation that high-quality software and technology experiences
+        need to be built upon.
+      </p>
+    </div>
+    <div class="pillar-card">
+      <h3>Empathy</h3>
+      <p>
+        Understanding the problems, needs, wants, and motivations of real people
+        separates good work from great work.
+      </p>
+    </div>
+    <div class="pillar-card">
+      <h3>Curiosity</h3>
+      <p>
+        Approaching product and process design with questions and creative
+        thinking crafts innovative solutions.
+      </p>
+    </div>
+  </div>
+
+  <div class="ethos-divider"><span>in practice</span></div>
+
+  <div class="values-grid">
+    <div class="value-item">
+      <svg class="value-icon" aria-hidden="true" focusable="false">
+        <use
+          href="#running_figure_icon_svg"
+          xlink:href="#running_figure_icon_svg"
+        ></use>
+      </svg>
+      <div class="value-item-header">
+        <h3>Built for Humans</h3>
+      </div>
+      <p><strong>Real people have real problems to solve.</strong></p>
+      <p>
+        Technology itself shouldn't add to that list. Understanding people and
+        their problems is the starting point to finding true solutions.
+      </p>
+    </div>
+    <div class="value-item">
+      <svg class="value-icon" aria-hidden="true" focusable="false">
+        <use href="#recycle_icon_svg" xlink:href="#recycle_icon_svg" />
+      </svg>
+      <div class="value-item-header">
+        <h3>Legacy ≠ Trash</h3>
+      </div>
+      <p>
+        <strong>Does old, usable tech have to be retired? NO!</strong>
+      </p>
+      <p>
+        We push back against today's greed-driven, socially and environmentally
+        irresponsible practices.
+      </p>
+    </div>
+    <div class="value-item">
+      <svg class="value-icon" aria-hidden="true" focusable="false">
+        <use href="#iterative_icon_svg" xlink:href="#iterative_icon_svg" />
+      </svg>
+      <div class="value-item-header">
+        <h3>Agile &amp; Iterative</h3>
+      </div>
+      <p><strong>Share. Learn. Improve. Repeat.</strong></p>
+      <p>
+        User feedback and insights inform continuously improving products and
+        shape solid relationships built on trust.
+      </p>
+    </div>
+    <div class="value-item">
+      <svg class="value-icon" aria-hidden="true" focusable="false">
+        <use
+          href="#accessibility_icon_svg"
+          xlink:href="#accessibility_icon_svg"
+        />
+      </svg>
+
+      <div class="value-item-header">
+        <h3>Usable &amp; Accessible</h3>
+      </div>
+      <p>
+        Imagine technology that is universally pleasant to use, designed with
+        humans in mind.
+      </p>
+      <p>All humans.</p>
+      <p><strong>These things shouldn't be afterthoughts.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">// About Donna</p>
+
+  <div class="about-text">
+    <p>
+      I'm Donna Harris, the real-life person behind
+      <span class="foundational">Foundational</span>
+      <span class="things">Things</span>. My work lives at the intersection of
+      people and technology, building software and learning experiences that are
+      both useful and human.
+    </p>
+    <p>
+      As a solopreneur, I bring together a multi-faceted background in software
+      development, deeply held personal and professional values, and the
+      practical support of AI tools available in 2026. I use all of it to create
+      thoughtful, grounded technology experiences.
+    </p>
+    <p>
+      In my work as a business analyst, I learned to repeatedly ask and respond
+      to a simple but powerful question:
+      <span class="question">What problem are we trying to solve?</span> I also
+      learned that it is surprisingly easy to build something impressive that
+      doesn't truly address any real need.
+    </p>
+    <p>
+      Over time, I began noticing problems in my own life that I wanted to solve
+      more intentionally. That curiosity led me to explore how software and
+      systems could better support everyday challenges. I've found that others
+      are navigating similar challenges, which is why I want to share and grow
+      products publicly under the <span class="foundational">Foundational</span>
+      <span class="things">Things</span> brand.
+    </p>
+    <p>
+      I'm also an educator, musician, and lifelong learner. I have a teacher's
+      heart and care deeply about helping people grow more confident with
+      technology. When I'm not building software, I create resources that help
+      people better understand technology, both how it's built and how to use it
+      well in everyday life.
+    </p>
+  </div>
+
+  <div class="about-links">
+    <a
+      href="https://donnajharris.github.io/portfolio/technical.html"
+      target="_blank"
+      title="Portfolio"
+      >Portfolio<svg aria-hidden="true" focusable="false">
+        <use href="#clipboard_icon_svg" xlink:href="#clipboard_icon_svg" />
+      </svg>
+    </a>
+    <a
+      href="https://www.linkedin.com/in/donnajharris"
+      target="_blank"
+      title="My LinkedIn"
+      class="icon-link"
+      >LinkedIn<svg aria-hidden="true" focusable="false">
+        <use href="#linkedin_icon_svg" xlink:href="#linkedin_icon_svg" />
+      </svg>
+    </a>
+  </div>
+
+  <p class="contact-line" id="contact">
+    Get in touch:<svg aria-hidden="true" focusable="false">
+      <use href="#email_icon_svg" xlink:href="#email_icon_svg" />
+    </svg>
+    <a href="mailto:hello@foundationalthings.com"
+      >hello@foundationalthings.com</a
+    >
+  </p>
+</section>
+
+<!-- AVAILABLE -->
+<section id="available">
+  <div class="section-label">// Work With Me</div>
+
+  <div class="available">
+    <div class="available-card">
+      <h3>Ask for Help (aka Office Hours)</h3>
+      <p>
+        Ever wished you could just ask a question or work through a problem with
+        someone?
+      </p>
+      <p>
+        <span class="foundational">Foundational</span>
+        <span class="things">Things</span> has Office Hours!
+      </p>
+      <div class="card-links">
+        <a
+          class="card-link"
+          href="https://ko-fi.com/c/6d7ac606ee"
+          target="_kofi"
+        >
+          <svg class="link-icon" aria-hidden="true" focusable="false">
+            <use href="#kofi_icon_svg" xlink:href="#kofi_icon_svg" /></svg
+          >Learn more...
+        </a>
+      </div>
+    </div>
+    <div class="available-card">
+      <h3>Website Discovery Session</h3>
+      <p>
+        Curious if having your own website is for you? Or wanting to make some
+        changes to your online presence?
+      </p>
+      <p>
+        <span class="foundational">Foundational</span>
+        <span class="things">Things</span> can help you find what suits your
+        needs and get you going.
+      </p>
+      <div class="card-links">
+        <a
+          class="card-link"
+          href="https://ko-fi.com/c/8c5befcdce"
+          target="_kofi"
+        >
+          <svg class="link-icon" aria-hidden="true" focusable="false">
+            <use href="#kofi_icon_svg" xlink:href="#kofi_icon_svg" /></svg
+          >Learn more...
+        </a>
+      </div>
+    </div>
+
+    <div class="availability-box">
+      <h3>also available for:</h3>
+      <ul class="avail-list">
+        <li>Consulting</li>
+        <li>Training Program Development</li>
+        <li>Training Delivery</li>
+        <li>Software Testing</li>
+        <li>Requirements Analysis</li>
+        <li>AI-assisted Development</li>
+        <li>Technical Documentation</li>
+        <li>Product Documentation</li>
+        <li>Writing</li>
+        <li>Speaking</li>
+        <li>Workshop Delivery</li>
+        <li>Product Ideation</li>
+      </ul>
+      <div class="card-links">
+        <a class="card-link" href="mailto:hello@foundationalthings.com">
+          <svg class="link-icon" aria-hidden="true" focusable="false">
+            <use href="#email_icon_svg" xlink:href="#email_icon_svg" /></svg
+          >Email Donna
+        </a>
+        <a
+          class="card-link"
+          href="https://ko-fi.com/foundationalthings"
+          target="_blank"
+        >
+          <svg class="link-icon" aria-hidden="true" focusable="false">
+            <use href="#kofi_icon_svg" xlink:href="#kofi_icon_svg" /></svg
+          >Ko-Fi
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
