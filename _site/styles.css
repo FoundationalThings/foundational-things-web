@@ -14,7 +14,7 @@
   --teal: #39aea9;
   --teal-deep: #22696f;
   --mint: #a2d5ab;
-  --muted: #8a8080;
+  --muted: #665d5d;
   --border: #d8d0c4;
   --body: 'Lora', Georgia, serif;
   --mono: 'DM Mono', 'Courier New', monospace;
@@ -22,6 +22,26 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.skip-link {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: 1000;
+  padding: 8px 12px;
+  background: var(--paper);
+  color: var(--teal-deep);
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+a:focus-visible {
+  outline: 3px solid var(--teal-deep);
+  outline-offset: 3px;
 }
 
 body {
@@ -327,15 +347,15 @@ p:last-child {
 }
 
 .type-badge {
-  color: var(--teal);
+  color: var(--teal-deep);
   background: var(--paper);
-  border: 1px solid var(--teal);
+  border: 1px solid var(--teal-deep);
 }
 
 .type-badge-icon {
   height: 32px;
   vertical-align: middle;
-  color: var(--teal);
+  color: var(--teal-deep);
   padding: 1px;
 }
 
@@ -424,9 +444,10 @@ p:last-child {
   margin-bottom: 36px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 830px) {
   .pillars-grid {
     grid-template-columns: 1fr;
+    gap: 4px;
   }
 }
 
@@ -468,7 +489,7 @@ p:last-child {
 .pillar-card p {
   /* font-size: 15px; */
   letter-spacing: 0.12em;
-  color: rgba(255, 255, 255, 0.72);
+  color: #fff;
   line-height: 1.5;
   margin: 0;
 }
@@ -772,18 +793,21 @@ footer {
   vertical-align: middle;
 }
 
-.github-pages-link {
+.site-tech-links {
   border: 3px dotted transparent;
   padding: 20px;
   width: fit-content;
   justify-self: center;
 }
-.github-pages-link a {
+.site-tech-links a {
   color: currentColor;
   text-decoration: none;
   border-bottom: none;
 }
-.github-pages-link:hover {
+.site-tech-links a:hover {
+  text-decoration: underline;
+}
+.site-tech-links:hover {
   border: 3px dotted var(--teal);
 }
 
@@ -819,4 +843,19 @@ section:nth-of-type(2) {
 }
 section:nth-of-type(3) {
   animation-delay: 0.3s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  header,
+  section {
+    animation: none;
+  }
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
 }

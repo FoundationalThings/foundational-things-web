@@ -34,6 +34,7 @@
     <link rel="manifest" href="./favicon/site.webmanifest?v=20260603" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <!-- SVG Sprite Definition -->
 <svg
   xmlns="http://www.w3.org/2000/svg"
@@ -363,7 +364,7 @@
     <div class="site-wrap">
       <header>
   <div class="logo-wrap">
-    <img src="./images/Logo.png" alt="Foundational Things logo" />
+    <img src="./images/Logo.png" alt="" />
   </div>
   <h1 class="site-title">
     <a href="./index.html">Foundational <span>Things</span></a>
@@ -380,9 +381,9 @@
   </nav>
 </header>
 
-      <!-- PROJECTS -->
+      <main id="main-content"><!-- PROJECTS -->
 <section id="privacy">
-  <p class="section-label">// Privacy Policy</p>
+  <h2 class="section-label">// Privacy Policy</h2>
   <div class="projects">
     <div class="privacy-text">
       <p>
@@ -400,7 +401,9 @@
       <div class="privacy-items">
         <div class="privacy-item">
           <h3 class="privacy-item-header">We don't <em>sell</em> data...</h3>
-          <p>But we are likely <em>sharing</em> some data.</p>
+          <p>
+            But we are likely <em><strong>sharing</strong></em> some data.
+          </p>
           <p>
             We use a number of free services to run Foundational Things. The use
             of free services often means paying with data in some way.
@@ -425,6 +428,14 @@
           </p>
         </div>
         <div class="privacy-item">
+          <h3 class="privacy-item-header">We do track some statistics...</h3>
+          <p>
+            We may also collect statistical information about your visits to
+            this website, but know that data is anonymized and will not be
+            connected to your identity.
+          </p>
+        </div>
+        <div class="privacy-item">
           <h3 class="privacy-item-header">Paying Foundational Things</h3>
           <p>
             If you provide funds to Foundational Things, for any reason, here's
@@ -433,9 +444,9 @@
           <p>We use Ko-Fi and Stripe, both as free services.</p>
           <p>
             <a href="https://ko-fi.com" target="_blank">Ko-Fi</a> is a platform
-            that exists to help creators like us to get support from people like
-            you! It handles donations, subscriptions, and selling products for
-            us. You can read their
+            that exists to help creators like Foundational Things get support
+            from people like you! Ko-Fi handles donations, subscriptions, and
+            selling products for us. You can read their
             <a href="https://more.ko-fi.com/privacy" target="_blank"
               >privacy policy here</a
             >.
@@ -443,7 +454,7 @@
           <p>
             Our Ko-Fi page is set up to use
             <a href="https://stripe.com" target="_blank">Stripe</a>
-            for payments, such as product purchases and tips/donations. You
+            for payments, such as product purchases, tips, or donations. You
             might also see reference to one of Stripe's products,
             <a href="https://link.com" target="_blank">Link</a>, which is used
             for the actual processing. You can read
@@ -460,8 +471,8 @@
             We don't keep your payment details.
           </h3>
           <p>
-            We will never keep any payment card or account details stored. If
-            for some reason we are given access to this information, we will
+            We will never keep any payment card or account details stored. If,
+            for some reason, we are given access to this information, we will
             only use it with your consent and we will destroy our copy of the
             information after its use.
           </p>
@@ -488,7 +499,7 @@
     </div>
   </div>
 </section>
-
+</main>
       <footer>
   <div class="footer-links">
     <a href="mailto:hello@foundationalthings.com" title="Email"
@@ -528,16 +539,23 @@
   <p class="footer-copy">
     <a href="./privacy.html">Privacy Policy</a>
   </p>
-  <div class="github-pages-link">
+  <div class="site-tech-links">
     <p class="footer-copy">
+      Foundational Things is proudly hosted on
       <a href="https://docs.github.com/en/pages" target="_blank">
-        Foundational Things is proudly hosted on
-
         <img
           alt="GitHub Pages"
           title="GitHub Pages"
           src="https://img.shields.io/badge/GitHub-Pages-181717?style=flat&logo=github&logoColor=white"
       /></a>
+      and
+      <a href="https://jekyllrb.com/">
+        <img
+          alt="Jekyll"
+          title="Jekyll"
+          src="https://img.shields.io/badge/Built%20with-Jekyll-CC0000?style=flat&logo=jekyll&logoColor=white"
+        />
+      </a>
     </p>
   </div>
 </footer>
