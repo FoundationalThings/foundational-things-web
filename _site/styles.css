@@ -95,7 +95,7 @@ header {
   font-weight: 600;
   font-style: normal;
   color: var(--ink);
-  letter-spacing: -0.01em;
+  letter-spacing: 0.05em;
   margin-bottom: 8px;
 }
 
@@ -170,6 +170,18 @@ section {
   text-transform: uppercase;
   color: var(--teal-deep);
   margin-bottom: 18px;
+}
+
+.section-label span {
+  position: relative;
+}
+
+.section-label span::before {
+  content: '//';
+  position: absolute;
+  right: calc(100% + 0.5em);
+  color: var(--mint);
+  opacity: 50%;
 }
 
 p {
@@ -595,19 +607,27 @@ p:last-child {
 
 .about-text .question {
   font-weight: 600;
-  letter-spacing: 0.2em;
-  color: var(--teal-deep);
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+
+.about-text .question-callout {
+  margin: 20px 0;
+  padding: 16px 20px;
+  border-left: 4px solid var(--teal);
+  background: var(--warm-mid);
+  font-size: 18px;
 }
 
 .foundational {
   font-weight: 600;
-  letter-spacing: 0.2em;
+  /* letter-spacing: 0.2em; */
   color: var(--ink);
 }
 
 .things {
   font-weight: 600;
-  letter-spacing: 0.2em;
+  /* letter-spacing: 0.2em; */
   color: var(--teal-deep);
 }
 
@@ -791,6 +811,10 @@ footer {
 
 .footer-copy img {
   vertical-align: middle;
+}
+
+.footer-keep-together {
+  white-space: nowrap;
 }
 
 .site-tech-links {
