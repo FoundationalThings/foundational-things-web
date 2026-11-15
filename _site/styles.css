@@ -25,18 +25,22 @@ html {
 }
 
 .skip-link {
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  z-index: 1000;
-  padding: 8px 12px;
-  background: var(--paper);
-  color: var(--teal-deep);
-  transform: translateY(-150%);
+  position: fixed;
+  top: 12px;
+  left: -10000px;
+  z-index: 10000;
+  padding: 10px 16px;
+  border: 2px solid var(--teal-deep);
+  border-radius: 4px;
+  background: var(--lime);
+  box-shadow: 0 4px 14px rgba(34, 105, 111, 0.3);
+  color: var(--ink);
+  font-family: var(--mono);
+  text-decoration: none;
 }
 
 .skip-link:focus {
-  transform: translateY(0);
+  left: 12px;
 }
 
 a:focus-visible {
