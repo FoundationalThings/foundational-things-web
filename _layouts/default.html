@@ -34,10 +34,11 @@
     <link rel="manifest" href="./favicon/site.webmanifest?v=20260603" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     {% include sprites.html %}
     <div class="site-wrap">
       {% include header.html %}
-      {{ content }}
+      <main id="main-content">{{ content }}</main>
       {% include footer.html %}
     </div>
   </body>
